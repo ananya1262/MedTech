@@ -1,0 +1,370 @@
+body {
+    background: #000;
+    background-size: 100% 100%;
+    padding-left:20px;
+    
+  }
+  
+  svg {
+    max-height: 95vh;
+  }
+  
+  #stars_1_ rect {
+    animation: starsAnim 2s .5s infinite ease-out;
+  }
+  
+  #stars_1_ rect:nth-child(odd) {
+    animation: starsAnim 1.2s infinite ease-out;
+  }
+  
+  #comet {
+    animation: cometAnim 15s 2 ease-out;
+  }
+  
+  #moon_1_ {
+    animation: moonAnim 360s infinite linear;
+  }
+  
+  #left-eyeball,
+  #right-eyeball {
+    animation: eyemovement 7s infinite ease-out;
+    transform-origin: center center;
+  }
+  
+  #right-eye,
+  #left-eye {
+     transform-origin: center center;
+    animation: eyeClose 3s 1s infinite ease-out;
+  }
+  
+  #right-eyebrow,
+  #left-eyebrow {
+    animation: eyebrowAnim 3s 3.8s infinite ease-out;
+  }
+  
+  #cloud1,
+  #cloud3,
+  #cloud5 {
+    animation: cloudAnim 40s infinite ease-out;
+  }
+  
+  #cloud2,
+  #cloud4,
+  #cloud6,
+  #cloud7 {
+    animation: cloudAnim 35s infinite ease-out;
+  }
+  
+  #astro {
+    animation: floatAnim 17s infinite ease-out;
+  }
+  
+  #faceshadow {
+    animation: floatAnim2 17s infinite ease-out;
+  }
+  
+  #eyeclose2,
+  #eyeclose2 {
+    animation: opacAnim 3s infinite ease-out;
+  }
+  
+  @keyframes eyebrowAnim {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    3% {
+      transform: translateY(10px) translateX(2px);
+    }
+    5% {
+      transform: translateY(10px) translateX(2px);
+    }
+    14%,
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
+  @keyframes opacAnim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes eyeClose {
+    0% {
+      transform: scale(1);
+     
+    }
+    93% {
+      transform: scale(1);
+    }
+    95% {
+      transform: scale(1, 0) translateY(15px) translateX(2px);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /*Eye movement*/
+  
+  @keyframes eyemovement {
+    0% {
+      
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(3px) translateX(-5px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
+  @keyframes floatAnim {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    25% {
+      transform: translateY(10px) translateX(-15px);
+    }
+    50% {
+      transform: translateY(5px) translateX(-20px);
+    }
+     75% {
+      transform: translateY(-10px) translateX(-5px);
+    }
+    100% {
+      transform: translateY(0) translateX(0px);
+    }
+  }
+  
+  @keyframes floatAnim2 {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    50% {
+      transform: translateY(0) translateX(15px);
+    }
+    100% {
+      transform: translateY(0) translateX(0px);
+    }
+  }
+  
+  @keyframes cloudAnim {
+    0% {
+      transform: translateY(0) translateX(180px);
+    }
+    50% {
+      transform: translateY(0) translateX(0px);
+    }
+    100% {
+      transform: translateY(0) translateX(180px);
+    }
+  }
+  
+  @keyframes moonAnim {
+    0% {
+      transform: translateY(0) translateX(0px);
+    }
+    25% {
+      transform: translateY(-100px) translateX(-300px);
+    }
+    50% {
+      transform: translateY(-130px) translateX(-600px);
+    }
+    75% {
+      transform: translateY(-200px) translateX(-300px);
+    }
+    100% {
+      transform: translateY(0) translateX(-9990px);
+    }
+  }
+  
+  @keyframes starsAnim {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes cometAnim {
+    0% {
+      transform: translateY(50px) translateX(900px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(3px) translateX(-800px);
+      opacity: 0.8;
+    }
+  }
+
+  
+h1 {
+    color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    letter-spacing: -2px;
+    text-align:left;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+    top: 50px;
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff; */
+    font-family: "Josefin Slab", serif;
+  
+  }
+  
+  
+  
+  
+  
+  .result ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .result li {
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  h2 {
+    text-align: center;
+    color: #f7f0f0;
+    font-weight: 100;
+    font-size: 2.25em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  
+  }
+  /* Style the form */
+  form {
+    position: absolute;
+    background-color:none;
+    border-radius: 4px;
+    max-width: 600px;
+    
+  }
+  
+  
+  /* Style the form labels and input fields */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #f9f8f8;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+   
+  }
+  
+  input[type="number"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+  input[type="text"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: #2690fa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3650f9;
+  }
+  
+  
+  /* Style the result page */
+  .result {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 600px;
+  }
+  
+  .result h2 {
+    text-align: center;
+    color: #f6f4f4;
+  }
+  
+  .result p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5faf5;
+  }
+  
+  .result a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  
+  p {
+  
+    margin-bottom: 1rem;
+    color: #fdf9f9;
+    text-align: justify;
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  
+  a {
+    color: #fff;
+    background-color: #413ef5;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0px;
+    
+    
+  }
+  
+  a:hover {
+    background-color: #9555f4;
+  }
+  
+  h3{
+    color: #f9f9f9;
+    font-weight: 50;
+    font-size: 1.23em;
+    letter-spacing: 2px;
+
+  
+  }

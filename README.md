@@ -1,5 +1,5 @@
 # Project Overview
-The CS-CAM project, "Scope 3 Carbon Emission Calculator," was developed as a comprehensive solution to address the challenges of measuring Scope 3 carbon emissions within the medtech sector. Scope 3 emissions, which include all indirect emissions that occur in a company's value chain, both upstream and downstream, are notoriously difficult to measure and manage. However, they are critical to understanding a company’s true carbon footprint and achieving sustainability goals. Our solution offers an accurate, and context-specific approach to Scope 3 carbon accounting.
+The CS-CAM project, "Scope 3 Carbon Emission Calculator," was developed as a comprehensive solution to address the challenges of measuring Scope 3 carbon emissions. Scope 3 emissions, which include all indirect emissions that occur in a company's value chain, both upstream and downstream, are notoriously difficult to measure and manage. However, they are critical to understanding a company’s true carbon footprint and achieving sustainability goals. Our solution offers an accurate, and context-specific approach to Scope 3 carbon accounting.
 
 
 # Key Features
